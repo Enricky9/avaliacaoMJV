@@ -16,21 +16,17 @@ export class UserFormComponent implements OnInit {
     picture:""
   }
   timeOutToSave: any
-  createUserForm = false
 
   constructor(private route: ActivatedRoute, private userFormService: UserFormService, public router: Router) { }
 
   ngOnInit() {
     console.log(this.router.url)
-    this.createUserForm = this.router.url.includes("user/create")
-    if (!this.createUserForm) {
       this.id = this.route.snapshot.paramMap.get("id") ?? ""
       console.log(this.id)
       this.userFormService.getUserById(this.id).subscribe(response => {
         this.user = response
         console.log(response)
       })
-    }
   }
 
   saveUser() {

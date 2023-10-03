@@ -8,6 +8,7 @@ import { UserListModule } from './user-list/user-list.module';
 import { HttpClientModule } from '@angular/common/http';
 import { UserListService } from './user-list/user-list.service';
 import { UserFormModule } from './user-form/user-form.module';
+import { UserCreateModule } from './user-create/user-create.module';
 
 
 
@@ -21,7 +22,8 @@ import { UserFormModule } from './user-form/user-form.module';
     UserListModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    UserFormModule
+    UserFormModule,
+    UserCreateModule
   ],
   providers: [UserListService],
   bootstrap: [AppComponent],

@@ -1,0 +1,27 @@
+<form class="example-form" >
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput name="title" >
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>First Name</mat-label>
+    <input matInput name="firstName">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Last Name</mat-label>
+    <input matInput name="lastName">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Picture</mat-label>
+    <input matInput name="picture">
+  </mat-form-field>
+
+  <section>
+    <div class="example-button-row">
+      <button mat-button (click)="router.navigate(['users'])">Back</button>
+    </div>
+  </section>
+</form>

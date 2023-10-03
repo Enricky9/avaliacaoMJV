@@ -33,3 +33,6 @@ Formulário de criação de usuário.
 **Atualização de dados de usuário:**
 Formulário de atualização de dados do usuário pelo ID disponibilizado na lista.
 Toda vez que editar os inputs, salvar o formulário, se preocupar com quantidade de requisições para evitar sobre carga do servidor.
+
+
+** Tela de atualizaão de usuario salava os dados apos ficar sem digitar por 10s, assim evitando sobre carga no servidor**
