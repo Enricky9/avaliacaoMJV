@@ -28,25 +28,17 @@ createUser(user: any){
   return this.http.post<any>("https://dummyapi.io/data/v1/user/create",user, header)
 }
 
-updateUserById(id: string){
+updateUser(user: any){
   const header = {
     headers: new HttpHeaders({
       'app-id': "64cbeddd253549dc8b990b71"
     })
   }
 
-  return this.http.put<any>(`https://dummyapi.io/data/v1/user/${id}`, header)
+  return this.http.put<any>(`https://dummyapi.io/data/v1/user/${user.id}`, user, header)
 }
 
-deleteUserById(id: string){
-  const header = {
-    headers: new HttpHeaders({
-      'app-id': "64cbeddd253549dc8b990b71"
-    })
-  }
 
-  return this.http.delete<any>(`https://dummyapi.io/data/v1/user/${id}`, header)
-}
 
 
 
